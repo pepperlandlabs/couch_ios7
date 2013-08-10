@@ -12,5 +12,6 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *timerLabelview;
 @property (weak, nonatomic) IBOutlet UILabel *titleLabelView;
+@property (weak, nonatomic) IBOutlet UIImageView *stillImageView;
 
 @end

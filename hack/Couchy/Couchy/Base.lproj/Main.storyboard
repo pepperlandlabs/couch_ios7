@@ -20,7 +20,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="181"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tv1.png" translatesAutoresizingMaskIntoConstraints="NO" id="xQs-xR-FPW">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xQs-xR-FPW">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="181"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         </imageView>
@@ -42,6 +42,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="stillImageView" destination="xQs-xR-FPW" id="TVd-mJ-kEq"/>
                                     <outlet property="timerLabelview" destination="dd5-wl-pYH" id="yhi-6b-iij"/>
                                     <outlet property="titleLabelView" destination="6fZ-ZJ-dIi" id="IXS-Jy-7ZW"/>
                                 </connections>
@@ -77,9 +78,6 @@
             <point key="canvasLocation" x="23" y="117"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="tv1.png" width="477" height="252"/>
-    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

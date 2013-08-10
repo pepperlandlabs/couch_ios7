@@ -20,4 +20,28 @@
     return videoRef;
 }
 
+- (void)loadImageIntoView:(UIImageView *)view
+{
+    // Shortcut if we already have it downloaded
+    if (self.stillImage) {
+        view.image = self.stillImage;
+        return;
+    }
+    
+    // use nsoperation instead?
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
+        NSData *data = [NSData dataWithContentsOfURL:self.stillImageURL];
+        UIImage *image = [UIImage imageWithData:data];
+        self.stillImage = image;
+        if (!image) {
+            NSLog(@"Failed to load image: %@", self.stillImageURL);
+        } else {
+            dispatch_async(dispatch_get_main_queue(), ^{
+                view.image = self.stillImage;
+            });
+        }
+    });
+
+}
+
 @end

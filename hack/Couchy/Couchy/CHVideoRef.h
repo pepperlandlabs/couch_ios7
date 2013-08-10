@@ -14,7 +14,9 @@
 @property (strong, nonatomic) NSURL *stillImageURL;
 @property (strong, nonatomic) NSURL *videoURL;
 @property (strong, nonatomic) NSNumber *duration;
+@property (strong, nonatomic) UIImage *stillImage;
 
 + (CHVideoRef *) videoRefWithData:(NSDictionary *)data;
+- (void)loadImageIntoView:(UIImageView *)view;
 
 @end

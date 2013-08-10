@@ -96,7 +96,7 @@
     
     CHVideoRef *videoRef = self.feedItems[indexPath.row];
     cell.titleLabelView.text = videoRef.title;
-    
+    [videoRef loadImageIntoView:cell.stillImageView];
     return cell;
 }
 
