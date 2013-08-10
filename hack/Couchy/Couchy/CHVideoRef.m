@@ -16,7 +16,7 @@
     videoRef.title = data[@"title"];
     videoRef.stillImageURL = [NSURL URLWithString:data[@"still_image_url"]];
     videoRef.videoURL = [NSURL URLWithString:data[@"video_url"]];
-    //videoRef.duration = [NSNumber numberWithInt:data[@"duration"]];
+    videoRef.duration = data[@"duration"];
     return videoRef;
 }
 
