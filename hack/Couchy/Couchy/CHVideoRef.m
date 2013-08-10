@@ -44,4 +44,11 @@
 
 }
 
+- (NSString *)durationString
+{
+    int minutes = self.duration.intValue / 60;
+    int seconds = self.duration.intValue % 60;
+    return [NSString stringWithFormat:@"%d:%02d", minutes, seconds];
+}
+
 @end

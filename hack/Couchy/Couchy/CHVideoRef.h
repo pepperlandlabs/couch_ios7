@@ -18,5 +18,6 @@
 
 + (CHVideoRef *) videoRefWithData:(NSDictionary *)data;
 - (void)loadImageIntoView:(UIImageView *)view;
+- (NSString *)durationString;
 
 @end
