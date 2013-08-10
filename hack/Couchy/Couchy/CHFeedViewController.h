@@ -10,6 +10,7 @@
 
 @interface CHFeedViewController : UITableViewController
 
+@property (readwrite, strong, nonatomic) dispatch_queue_t downloadQueue;
 @property (strong, nonatomic) NSMutableArray *feedItems;
 
 @end
