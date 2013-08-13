@@ -24,6 +24,8 @@
 		8893C28717B3F81700CECDC5 /* tv1.png in Resources */ = {isa = PBXBuildFile; fileRef = 8893C28617B3F81700CECDC5 /* tv1.png */; };
 		8893C28A17B3F9F100CECDC5 /* CHFeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8893C28917B3F9F100CECDC5 /* CHFeedViewController.m */; };
 		8893C28D17B3FAED00CECDC5 /* CHFeedItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8893C28C17B3FAED00CECDC5 /* CHFeedItemCell.m */; };
+		88C2746D17BA77390025FED0 /* libFlurry.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 88C2746C17BA77390025FED0 /* libFlurry.a */; };
+		88C2746F17BA783E0025FED0 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88C2746E17BA783E0025FED0 /* SystemConfiguration.framework */; };
 		88D78E9717B54A0100D9428C /* CHVideoRef.m in Sources */ = {isa = PBXBuildFile; fileRef = 88D78E9617B54A0100D9428C /* CHVideoRef.m */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +64,9 @@
 		8893C28917B3F9F100CECDC5 /* CHFeedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHFeedViewController.m; sourceTree = "<group>"; };
 		8893C28B17B3FAED00CECDC5 /* CHFeedItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHFeedItemCell.h; sourceTree = "<group>"; };
 		8893C28C17B3FAED00CECDC5 /* CHFeedItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHFeedItemCell.m; sourceTree = "<group>"; };
+		88C2746B17BA77390025FED0 /* Flurry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Flurry.h; sourceTree = "<group>"; };
+		88C2746C17BA77390025FED0 /* libFlurry.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlurry.a; sourceTree = "<group>"; };
+		88C2746E17BA783E0025FED0 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		88D78E9517B54A0100D9428C /* CHVideoRef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHVideoRef.h; sourceTree = "<group>"; };
 		88D78E9617B54A0100D9428C /* CHVideoRef.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHVideoRef.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -71,6 +76,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88C2746F17BA783E0025FED0 /* SystemConfiguration.framework in Frameworks */,
+				88C2746D17BA77390025FED0 /* libFlurry.a in Frameworks */,
 				8893C25417B3F6F900CECDC5 /* CoreGraphics.framework in Frameworks */,
 				8893C25617B3F6F900CECDC5 /* UIKit.framework in Frameworks */,
 				8893C25217B3F6F900CECDC5 /* Foundation.framework in Frameworks */,
@@ -112,6 +119,8 @@
 		8893C25017B3F6F900CECDC5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				88C2746E17BA783E0025FED0 /* SystemConfiguration.framework */,
+				88C2746A17BA77390025FED0 /* Flurry */,
 				8893C25117B3F6F900CECDC5 /* Foundation.framework */,
 				8893C25317B3F6F900CECDC5 /* CoreGraphics.framework */,
 				8893C25517B3F6F900CECDC5 /* UIKit.framework */,
@@ -170,6 +179,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		88C2746A17BA77390025FED0 /* Flurry */ = {
+			isa = PBXGroup;
+			children = (
+				88C2746B17BA77390025FED0 /* Flurry.h */,
+				88C2746C17BA77390025FED0 /* libFlurry.a */,
+			);
+			path = Flurry;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -218,6 +236,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Jesse Montrose";
 				TargetAttributes = {
+					8893C24D17B3F6F900CECDC5 = {
+						DevelopmentTeam = JL67MSRRD2;
+					};
 					8893C26E17B3F6F900CECDC5 = {
 						TestTargetID = 8893C24D17B3F6F900CECDC5;
 					};
@@ -397,10 +418,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Couchy/Couchy-Prefix.pch";
 				INFOPLIST_FILE = "Couchy/Couchy-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/jesse/src/couch_ios7/hack/Couchy/Flurry,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -410,10 +438,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Couchy/Couchy-Prefix.pch";
 				INFOPLIST_FILE = "Couchy/Couchy-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/jesse/src/couch_ios7/hack/Couchy/Flurry,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

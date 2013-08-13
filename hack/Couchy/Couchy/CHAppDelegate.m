@@ -6,6 +6,7 @@
 //  Copyright (c) 2013 Jesse Montrose. All rights reserved.
 //
 
+#import "Flurry.h"
 #import "CHAppDelegate.h"
 
 @implementation CHAppDelegate
@@ -13,6 +14,8 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    [Flurry startSession:@"C5GVWRBSCBH77N94CYRN"];
+
     return YES;
 }
 							
