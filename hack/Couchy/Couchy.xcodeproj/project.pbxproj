@@ -425,7 +425,7 @@
 				INFOPLIST_FILE = "Couchy/Couchy-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					/Users/jesse/src/couch_ios7/hack/Couchy/Flurry,
+					"${SOURCE_ROOT}/Flurry",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -445,7 +445,7 @@
 				INFOPLIST_FILE = "Couchy/Couchy-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					/Users/jesse/src/couch_ios7/hack/Couchy/Flurry,
+					"${SOURCE_ROOT}/Flurry",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
