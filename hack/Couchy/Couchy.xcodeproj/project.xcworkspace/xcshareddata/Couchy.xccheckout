@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>EAF14968-8E4B-48CC-9068-DE360BBAC8EA</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Couchy</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>B02D66C8-1E7A-48A3-9EA3-B4F7ACD609AD</key>
+		<string>https://github.com/pepperlandlabs/couch_ios7.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>hack/Couchy/Couchy.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>B02D66C8-1E7A-48A3-9EA3-B4F7ACD609AD</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/pepperlandlabs/couch_ios7.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>B02D66C8-1E7A-48A3-9EA3-B4F7ACD609AD</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>B02D66C8-1E7A-48A3-9EA3-B4F7ACD609AD</string>
+			<key>IDESourceControlWCCName</key>
+			<string>couch_ios7</string>
+		</dict>
+	</array>
+</dict>
+</plist>
