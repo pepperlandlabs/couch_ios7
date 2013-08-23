@@ -60,7 +60,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="QGF-l1-7DD" kind="push" id="OHk-mo-kzV"/>
+                                    <segue destination="LhI-Ba-gKK" kind="push" id="SaE-rx-huy"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -137,12 +137,52 @@
                                     </label>
                                 </subviews>
                             </view>
+                            <collectionView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Uxb-Dt-kcC">
+                                <rect key="frame" x="0.0" y="328" width="320" height="140"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="M5d-y8-0y8">
+                                    <size key="itemSize" width="253" height="140"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="pNP-M8-P8m">
+                                        <rect key="frame" x="0.0" y="0.0" width="253" height="140"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="253" height="140"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="jumpingjackssmall.png" translatesAutoresizingMaskIntoConstraints="NO" id="y8i-AR-RIQ">
+                                                    <rect key="frame" x="0.0" y="0.0" width="253" height="140"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </collectionViewCell>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="hCt-wb-h0A">
+                                        <rect key="frame" x="263" y="0.0" width="253" height="140"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="253" height="140"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="jumpingjackssmall.png" translatesAutoresizingMaskIntoConstraints="NO" id="MTf-QI-kuc">
+                                                    <rect key="frame" x="0.0" y="0.0" width="253" height="140"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Add To Queue" id="mbD-jF-ifA">
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="uud-0e-0ST"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Add To Queue" id="mbD-jF-ifA"/>
                     <connections>
                         <outlet property="searchDisplayController" destination="N3H-1M-MWg" id="eEd-RP-BeA"/>
                     </connections>
@@ -170,7 +210,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" ambiguous="YES" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="VIDEO_CELL" rowHeight="180" id="wDa-Fp-1QF" customClass="CHFeedItemCell">
-                                <rect key="frame" x="0.0" y="22" width="320" height="180"/>
+                                <rect key="frame" x="0.0" y="86" width="320" height="180"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="wDa-Fp-1QF" id="grd-v6-wM5">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="180"/>
@@ -217,7 +257,7 @@
                                 </connections>
                             </tableViewCell>
                             <tableViewCell contentMode="scaleToFill" ambiguous="YES" selectionStyle="default" indentationWidth="10" rowHeight="303" id="Ulo-83-LHh">
-                                <rect key="frame" x="0.0" y="202" width="320" height="303"/>
+                                <rect key="frame" x="0.0" y="266" width="320" height="303"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="Ulo-83-LHh" id="g68-P7-Wa4">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="303"/>
@@ -235,7 +275,7 @@
                                 </tableViewCellContentView>
                             </tableViewCell>
                             <tableViewCell contentMode="scaleToFill" ambiguous="YES" selectionStyle="default" indentationWidth="10" id="5te-dP-pfi">
-                                <rect key="frame" x="0.0" y="505" width="320" height="180"/>
+                                <rect key="frame" x="0.0" y="569" width="320" height="180"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="5te-dP-pfi" id="vE4-Ke-enj">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="180"/>
@@ -588,6 +628,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="jumpingjackssmall.png" width="253" height="142"/>
         <image name="recommendedvids.png" width="505" height="140"/>
         <image name="tv1.png" width="477" height="252"/>
         <image name="welcome-1.png" width="180" height="180"/>
@@ -603,7 +644,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="OHk-mo-kzV"/>
-        <segue reference="HTs-kD-JN1"/>
+        <segue reference="SaE-rx-huy"/>
     </inferredMetricsTieBreakers>
 </document>

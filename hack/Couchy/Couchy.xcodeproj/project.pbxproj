@@ -21,6 +21,8 @@
 		6C0009D517C802A100D308E3 /* welcome-bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C0009C917C802A100D308E3 /* welcome-bg@2x.png */; };
 		6C2E1E3317C8214C00C9C780 /* recommendedvids.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C2E1E3117C8214C00C9C780 /* recommendedvids.png */; };
 		6C2E1E3417C8214C00C9C780 /* recommendedvids@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C2E1E3217C8214C00C9C780 /* recommendedvids@2x.png */; };
+		6C2E1E3717C8265900C9C780 /* jumpingjackssmall.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C2E1E3517C8265900C9C780 /* jumpingjackssmall.png */; };
+		6C2E1E3817C8265900C9C780 /* jumpingjackssmall@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C2E1E3617C8265900C9C780 /* jumpingjackssmall@2x.png */; };
 		8893C25217B3F6F900CECDC5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8893C25117B3F6F900CECDC5 /* Foundation.framework */; };
 		8893C25417B3F6F900CECDC5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8893C25317B3F6F900CECDC5 /* CoreGraphics.framework */; };
 		8893C25617B3F6F900CECDC5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8893C25517B3F6F900CECDC5 /* UIKit.framework */; };
@@ -68,6 +70,8 @@
 		6C0009C917C802A100D308E3 /* welcome-bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "welcome-bg@2x.png"; sourceTree = "<group>"; };
 		6C2E1E3117C8214C00C9C780 /* recommendedvids.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = recommendedvids.png; sourceTree = "<group>"; };
 		6C2E1E3217C8214C00C9C780 /* recommendedvids@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "recommendedvids@2x.png"; sourceTree = "<group>"; };
+		6C2E1E3517C8265900C9C780 /* jumpingjackssmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jumpingjackssmall.png; sourceTree = "<group>"; };
+		6C2E1E3617C8265900C9C780 /* jumpingjackssmall@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "jumpingjackssmall@2x.png"; sourceTree = "<group>"; };
 		8893C24E17B3F6F900CECDC5 /* Couchy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Couchy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8893C25117B3F6F900CECDC5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8893C25317B3F6F900CECDC5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -163,8 +167,6 @@
 				8893C26017B3F6F900CECDC5 /* CHAppDelegate.h */,
 				8893C26117B3F6F900CECDC5 /* CHAppDelegate.m */,
 				8893C26317B3F6F900CECDC5 /* Main.storyboard */,
-				6C2E1E3117C8214C00C9C780 /* recommendedvids.png */,
-				6C2E1E3217C8214C00C9C780 /* recommendedvids@2x.png */,
 				8893C28B17B3FAED00CECDC5 /* CHFeedItemCell.h */,
 				8893C28C17B3FAED00CECDC5 /* CHFeedItemCell.m */,
 				8893C28817B3F9F100CECDC5 /* CHFeedViewController.h */,
@@ -182,6 +184,10 @@
 		8893C25817B3F6F900CECDC5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				6C2E1E3517C8265900C9C780 /* jumpingjackssmall.png */,
+				6C2E1E3617C8265900C9C780 /* jumpingjackssmall@2x.png */,
+				6C2E1E3117C8214C00C9C780 /* recommendedvids.png */,
+				6C2E1E3217C8214C00C9C780 /* recommendedvids@2x.png */,
 				6C0009BE17C802A100D308E3 /* welcome-1.png */,
 				6C0009BF17C802A100D308E3 /* welcome-1@2x.png */,
 				6C0009C017C802A100D308E3 /* welcome-2.png */,
@@ -314,7 +320,9 @@
 				6C2E1E3317C8214C00C9C780 /* recommendedvids.png in Resources */,
 				6C0009CB17C802A100D308E3 /* welcome-1@2x.png in Resources */,
 				6C0009CC17C802A100D308E3 /* welcome-2.png in Resources */,
+				6C2E1E3817C8265900C9C780 /* jumpingjackssmall@2x.png in Resources */,
 				6C0009CD17C802A100D308E3 /* welcome-2@2x.png in Resources */,
+				6C2E1E3717C8265900C9C780 /* jumpingjackssmall.png in Resources */,
 				6C0009CE17C802A100D308E3 /* welcome-3.png in Resources */,
 				6C0009CF17C802A100D308E3 /* welcome-3@2x.png in Resources */,
 				6C0009D017C802A100D308E3 /* welcome-4.png in Resources */,
