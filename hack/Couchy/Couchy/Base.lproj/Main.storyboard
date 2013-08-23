@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<<<<<<< HEAD
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4488.2" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="n7V-21-fWz">
-
+=======
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4488.2" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="rJb-Ay-HKG">
+>>>>>>> 33a87bf74128a22605a18cc59229293ae4edc5ec
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3715.3"/>
     </dependencies>
@@ -183,9 +186,9 @@
             <point key="canvasLocation" x="1723" y="-296"/>
         </scene>
         <!--View Controller-->
-
-        <scene sceneID="2fe-vQ-iFt"></scene>
-
+<<<<<<< HEAD
+        <scene sceneID="2fe-vQ-iFt">
+=======
         <scene sceneID="fpz-5t-IHy">
             <objects>
                 <viewController id="rJb-Ay-HKG" sceneMemberID="viewController">
@@ -314,13 +317,14 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="n7V-21-fWz" sceneMemberID="viewController">
                     <toolbarItems/>
-
+<<<<<<< HEAD
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="T4b-gP-aoe">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-
+=======
                     <navigationItem key="navigationItem" id="3aB-eV-ne0"/>
                     <nil key="simulatedBottomBarMetrics"/>
-
+                    <tabBar key="tabBar" contentMode="scaleToFill" translucent="NO" id="i8f-Y8-j86">
+>>>>>>> 33a87bf74128a22605a18cc59229293ae4edc5ec
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
