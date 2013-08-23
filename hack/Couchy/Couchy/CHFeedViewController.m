@@ -42,12 +42,14 @@
 - (void)downloadItems
 {
     // download json in the background
-    [self loadURLWithFailoverToCache:[NSURL URLWithString:@"http://spine.com/couch.json"]
+    [self loadURLWithFailoverToCache:[NSURL URLWithString:@"http://pepperlandlabs.com/couch/couch.json"]
         success:^(NSData *data) {
            NSError *error;
            NSDictionary *response = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:&error];
            if (!response) {
                NSLog(@"JSON parse failed: %@", error);
+               NSString *raw = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+               NSLog(@"DATA: %@", raw );
            } else {
                NSDictionary *result = response[@"result"];
                NSArray *videos = result[@"videos"];
