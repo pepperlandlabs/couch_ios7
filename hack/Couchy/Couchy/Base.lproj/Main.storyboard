@@ -52,6 +52,17 @@
                                     <segue destination="TYw-L5-coq" kind="push" id="TUK-XA-su0"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kQm-CZ-0R7">
+                                <rect key="frame" x="137" y="533" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="Skip">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="QGF-l1-7DD" kind="push" id="OHk-mo-kzV"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -62,7 +73,7 @@
             </objects>
             <point key="canvasLocation" x="-77" y="125"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller - Add To Queue-->
         <scene sceneID="2R6-AB-i36">
             <objects>
                 <viewController id="QGF-l1-7DD" sceneMemberID="viewController">
@@ -73,14 +84,83 @@
                     <view key="view" contentMode="scaleToFill" id="vBc-ZZ-lSN">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" fixedFrame="YES" placeholder="Search" translatesAutoresizingMaskIntoConstraints="NO" id="Xuv-oh-efc">
+                                <rect key="frame" x="0.0" y="64" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="QGF-l1-7DD" id="JSQ-44-uKc"/>
+                                </connections>
+                            </searchBar>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="recommendedvids.png" translatesAutoresizingMaskIntoConstraints="NO" id="BDX-yg-BAc">
+                                <rect key="frame" x="0.0" y="148" width="505" height="140"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tK1-Ih-iFc">
+                                <rect key="frame" x="0.0" y="108" width="320" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.90127473515447842" green="0.89623968076814065" blue="0.90630978954081631" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RCV-Aw-zeN">
+                                <rect key="frame" x="0.0" y="108" width="320" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Recommended" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JVw-gW-ud3">
+                                        <rect key="frame" x="16" y="0.0" width="200" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="14"/>
+                                        <color key="textColor" red="0.21514269770408168" green="0.21514269770408168" blue="0.21514269770408168" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </view>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="recommendedvids.png" translatesAutoresizingMaskIntoConstraints="NO" id="658-Ng-n5q">
+                                <rect key="frame" x="0.0" y="328" width="505" height="140"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8za-eW-Zw4">
+                                <rect key="frame" x="0.0" y="288" width="320" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.90127473520000001" green="0.89623968080000005" blue="0.90630978949999996" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g2Q-D7-g08">
+                                <rect key="frame" x="0.0" y="288" width="320" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Popular" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jck-3Q-Gsd">
+                                        <rect key="frame" x="16" y="0.0" width="200" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="14"/>
+                                        <color key="textColor" red="0.2151426977" green="0.2151426977" blue="0.2151426977" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Add To Queue" id="mbD-jF-ifA">
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="uud-0e-0ST"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="searchDisplayController" destination="N3H-1M-MWg" id="eEd-RP-BeA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fXO-rl-M8n" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="N3H-1M-MWg">
+                    <connections>
+                        <outlet property="delegate" destination="QGF-l1-7DD" id="Cd7-P9-NEx"/>
+                        <outlet property="searchBar" destination="Xuv-oh-efc" id="EuU-t9-f4I"/>
+                        <outlet property="searchContentsController" destination="QGF-l1-7DD" id="H8v-r1-4tM"/>
+                        <outlet property="searchResultsDataSource" destination="QGF-l1-7DD" id="nJo-wu-CjS"/>
+                        <outlet property="searchResultsDelegate" destination="QGF-l1-7DD" id="u9u-48-hI9"/>
+                    </connections>
+                </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="1808" y="473"/>
+            <point key="canvasLocation" x="2225" y="136"/>
         </scene>
-        <!--Feed View Controller - Feed-->
+        <!--Feed View Controller - Queue-->
         <scene sceneID="782-RY-nqW">
             <objects>
                 <tableViewController id="LhI-Ba-gKK" customClass="CHFeedViewController" sceneMemberID="viewController">
@@ -90,7 +170,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" ambiguous="YES" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="VIDEO_CELL" rowHeight="180" id="wDa-Fp-1QF" customClass="CHFeedItemCell">
-                                <rect key="frame" x="0.0" y="86" width="320" height="180"/>
+                                <rect key="frame" x="0.0" y="22" width="320" height="180"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="wDa-Fp-1QF" id="grd-v6-wM5">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="180"/>
@@ -137,7 +217,7 @@
                                 </connections>
                             </tableViewCell>
                             <tableViewCell contentMode="scaleToFill" ambiguous="YES" selectionStyle="default" indentationWidth="10" rowHeight="303" id="Ulo-83-LHh">
-                                <rect key="frame" x="0.0" y="266" width="320" height="303"/>
+                                <rect key="frame" x="0.0" y="202" width="320" height="303"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="Ulo-83-LHh" id="g68-P7-Wa4">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="303"/>
@@ -150,15 +230,12 @@
                                             <state key="normal" title="Button">
                                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                             </state>
-                                            <connections>
-                                                <segue destination="QGF-l1-7DD" kind="modal" id="LWZ-nP-uNS"/>
-                                            </connections>
                                         </button>
                                     </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
                             <tableViewCell contentMode="scaleToFill" ambiguous="YES" selectionStyle="default" indentationWidth="10" id="5te-dP-pfi">
-                                <rect key="frame" x="0.0" y="569" width="320" height="180"/>
+                                <rect key="frame" x="0.0" y="505" width="320" height="180"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="5te-dP-pfi" id="vE4-Ke-enj">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="180"/>
@@ -182,11 +259,17 @@
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Feed" id="02b-O1-n3Z"/>
-                    <navigationItem key="navigationItem" id="SdF-CC-dUv"/>
+                    <navigationItem key="navigationItem" title="Queue" id="SdF-CC-dUv">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="LTg-hs-WKe">
+                            <connections>
+                                <segue destination="QGF-l1-7DD" kind="push" id="WZi-3r-ZGV"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c4P-RC-B2O" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1723" y="-296"/>
+            <point key="canvasLocation" x="1779" y="136"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="2fe-vQ-iFt">
@@ -505,6 +588,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="recommendedvids.png" width="505" height="140"/>
         <image name="tv1.png" width="477" height="252"/>
         <image name="welcome-1.png" width="180" height="180"/>
         <image name="welcome-2.png" width="180" height="180"/>
@@ -519,6 +603,7 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="BNf-wS-b7V"/>
+        <segue reference="OHk-mo-kzV"/>
+        <segue reference="HTs-kD-JN1"/>
     </inferredMetricsTieBreakers>
 </document>
