@@ -88,7 +88,14 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return self.feedItems.count;
+    if (section == 0) {
+        return self.feedItems.count;
+    } else {
+        if (self.feedItems.count == 1) {
+            return 1;
+        }
+        return 0;
+    }
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
