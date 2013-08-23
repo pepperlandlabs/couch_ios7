@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3715.3"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--View Controller - Welcome to Couch-->
         <scene sceneID="pMJ-YH-gGe">
             <objects>
                 <viewController id="inu-Cb-d2N" sceneMemberID="viewController">
@@ -55,7 +55,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="VAO-Cr-IO8"/>
+                    <navigationItem key="navigationItem" title="Welcome to Couch" id="VAO-Cr-IO8"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bpg-eA-JQJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <panGestureRecognizer minimumNumberOfTouches="1" id="ppc-1s-fNW"/>
@@ -97,22 +97,29 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xQs-xR-FPW">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="179"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="180"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <accessibility key="accessibilityConfiguration">
+                                                <accessibilityTraits key="traits" none="YES" link="YES" image="YES"/>
+                                            </accessibility>
                                         </imageView>
+                                        <view opaque="NO" alpha="0.79999999999999982" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EOR-eo-WzX">
+                                            <rect key="frame" x="0.0" y="150" width="320" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </view>
                                         <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yfa-cz-0VW">
-                                            <rect key="frame" x="0.0" y="133" width="160" height="62"/>
+                                            <rect key="frame" x="0.0" y="140" width="320" height="40"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <subviews>
-                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="   Jumping Jacks" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6fZ-ZJ-dIi">
-                                                    <rect key="frame" x="0.0" y="5" width="320" height="30"/>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Jumping Jacks" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6fZ-ZJ-dIi">
+                                                    <rect key="frame" x="8" y="10" width="300" height="30"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="13"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         </view>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="4:18" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dd5-wl-pYH">
                                             <rect key="frame" x="290" y="5" width="42" height="21"/>
@@ -264,7 +271,7 @@
             </objects>
             <point key="canvasLocation" x="-521" y="107"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller - Welcome to Couch-->
         <scene sceneID="uWa-8i-IcK">
             <objects>
                 <viewController id="TYw-L5-coq" sceneMemberID="viewController">
@@ -315,14 +322,14 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Hv8-90-XHc"/>
+                    <navigationItem key="navigationItem" title="Welcome to Couch" id="Hv8-90-XHc"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zz2-DL-Mvs" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <panGestureRecognizer minimumNumberOfTouches="1" id="88b-FD-J9o"/>
             </objects>
             <point key="canvasLocation" x="301" y="125"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller - Welcome to Couch-->
         <scene sceneID="Kkg-pv-bnB">
             <objects>
                 <viewController id="Sni-cM-zDb" sceneMemberID="viewController">
@@ -373,14 +380,14 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="AIU-S9-0Qi"/>
+                    <navigationItem key="navigationItem" title="Welcome to Couch" id="AIU-S9-0Qi"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kZ3-hC-AzA" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <panGestureRecognizer minimumNumberOfTouches="1" id="7CX-nd-VhQ"/>
             </objects>
             <point key="canvasLocation" x="657" y="125"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller - Welcome to Couch-->
         <scene sceneID="w3T-Sf-Avt">
             <objects>
                 <viewController id="x6C-mV-6te" sceneMemberID="viewController">
@@ -431,14 +438,14 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="VN1-V7-VEK"/>
+                    <navigationItem key="navigationItem" title="Welcome to Couch" id="VN1-V7-VEK"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6hz-4n-cZe" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <panGestureRecognizer minimumNumberOfTouches="1" id="YIg-Kd-xfq"/>
             </objects>
             <point key="canvasLocation" x="1019" y="125"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller - Welcome to Couch-->
         <scene sceneID="GWB-hX-TCJ">
             <objects>
                 <viewController id="7Tl-Be-Au6" sceneMemberID="viewController">
@@ -489,7 +496,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="liC-PE-X4f"/>
+                    <navigationItem key="navigationItem" title="Welcome to Couch" id="liC-PE-X4f"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xZb-1b-hMK" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <panGestureRecognizer minimumNumberOfTouches="1" id="YkQ-7d-2h0"/>
