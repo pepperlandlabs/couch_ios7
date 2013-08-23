@@ -6,6 +6,7 @@
 //  Copyright (c) 2013 Jesse Montrose. All rights reserved.
 //
 
+#import "Flurry.h"
 #import "CHVideoRef.h"
 #import "CHFeedItemCell.h"
 #import "CHFeedViewController.h"
@@ -36,6 +37,8 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
     self.downloadQueue = dispatch_queue_create("org.ninth.app.downloadQueue", NULL);
+    [Flurry logEvent:@"queue_view" withParameters:@{@"queue":@"default"}];
+
     [self downloadItems];
 }
 
