@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CHViewController : UIViewController
+@interface CHViewController : UIViewController {
+    IBOutlet UIScrollView *scroller;
+}
 
 @end

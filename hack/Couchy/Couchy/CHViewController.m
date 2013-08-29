@@ -16,8 +16,13 @@
 
 - (void)viewDidLoad
 {
+    [scroller setScrollEnabled:YES];
+    [scroller setContentSize:CGSizeMake(320, 142)];
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    
+    
 }
 
 - (void)didReceiveMemoryWarning
