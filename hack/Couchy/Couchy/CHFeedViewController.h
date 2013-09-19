@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import <MediaPlayer/MediaPlayer.h>
+#import "CHFeedItemCell.h"
 
-@interface CHFeedViewController : UITableViewController
+@interface CHFeedViewController : UITableViewController <CHFeedItemCellDelegate>
 {
     MPMoviePlayerController *moviePlayer;
 }
