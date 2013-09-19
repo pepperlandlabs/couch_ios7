@@ -216,8 +216,9 @@
 
 -(void)playMovie
 {
-    NSURL *url = [NSURL fileURLWithPath:[[NSBundle mainBundle]
-                                         pathForResource:@"Shugo" ofType:@"m4v"]];
+    // NSURL *url = [NSURL fileURLWithPath:[[NSBundle mainBundle]
+                                         // pathForResource:@"Shugo" ofType:@"m4v"]];
+    NSURL    *url    =   [NSURL URLWithString:@"http://pepperlandlabs.com/couch/Shugo2.m4v"];
     moviePlayer =  [[MPMoviePlayerController alloc]
                     initWithContentURL:url];
     
