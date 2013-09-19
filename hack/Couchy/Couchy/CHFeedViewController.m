@@ -8,7 +8,6 @@
 
 #import "Flurry.h"
 #import "CHVideoRef.h"
-#import "CHFeedItemCell.h"
 #import "CHFeedViewController.h"
 
 @interface CHFeedViewController ()
@@ -109,9 +108,8 @@
     
     CHVideoRef *videoRef = self.feedItems[indexPath.row];
     cell.videoRef = videoRef;
-    cell.titleLabelView.text = videoRef.title;
-    cell.timerLabelview.text = videoRef.durationString;
-    [videoRef loadImageIntoView:cell.stillImageView];
+    cell.delegate = self;
+
     return cell;
 }
 
@@ -215,13 +213,18 @@
 
 }
 
--(void)playMovie
+- (void)playMovie
 {
+    // Just here to keep the old behavior working
+    [self playVideoURL:[NSURL URLWithString:@"http://pepperlandlabs.com/couch/Shugo2.m4v"]];
+}
+
+- (void)playVideoURL:(NSURL *)url
+{
+    NSLog(@"playVideoURL: %@", url);
     // NSURL *url = [NSURL fileURLWithPath:[[NSBundle mainBundle]
                                          // pathForResource:@"Shugo" ofType:@"m4v"]];
-    NSURL    *url    =   [NSURL URLWithString:@"http://pepperlandlabs.com/couch/Shugo2.m4v"];
-    moviePlayer =  [[MPMoviePlayerController alloc]
-                    initWithContentURL:url];
+    moviePlayer =  [[MPMoviePlayerController alloc] initWithContentURL:url];
     
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(moviePlayBackDidFinish:)
