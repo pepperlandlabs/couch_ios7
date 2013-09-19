@@ -23,6 +23,8 @@
 		6C2E1E3417C8214C00C9C780 /* recommendedvids@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C2E1E3217C8214C00C9C780 /* recommendedvids@2x.png */; };
 		6C2E1E3717C8265900C9C780 /* jumpingjackssmall.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C2E1E3517C8265900C9C780 /* jumpingjackssmall.png */; };
 		6C2E1E3817C8265900C9C780 /* jumpingjackssmall@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C2E1E3617C8265900C9C780 /* jumpingjackssmall@2x.png */; };
+		6C553B6A17EA759800174624 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C553B6917EA759800174624 /* MediaPlayer.framework */; };
+		6C553B6C17EA78D100174624 /* Shugo.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 6C553B6B17EA78D100174624 /* Shugo.m4v */; };
 		6CEE55B917CC392F0050A46F /* profileimg.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CEE55B717CC392F0050A46F /* profileimg.png */; };
 		6CEE55BA17CC392F0050A46F /* profileimg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CEE55B817CC392F0050A46F /* profileimg@2x.png */; };
 		6CEE55BF17CD53290050A46F /* greyarrowdown.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CEE55BB17CD53290050A46F /* greyarrowdown.png */; };
@@ -82,6 +84,8 @@
 		6C2E1E3217C8214C00C9C780 /* recommendedvids@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "recommendedvids@2x.png"; sourceTree = "<group>"; };
 		6C2E1E3517C8265900C9C780 /* jumpingjackssmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jumpingjackssmall.png; sourceTree = "<group>"; };
 		6C2E1E3617C8265900C9C780 /* jumpingjackssmall@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "jumpingjackssmall@2x.png"; sourceTree = "<group>"; };
+		6C553B6917EA759800174624 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		6C553B6B17EA78D100174624 /* Shugo.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Shugo.m4v; sourceTree = "<group>"; };
 		6CEE55B717CC392F0050A46F /* profileimg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profileimg.png; sourceTree = "<group>"; };
 		6CEE55B817CC392F0050A46F /* profileimg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "profileimg@2x.png"; sourceTree = "<group>"; };
 		6CEE55BB17CD53290050A46F /* greyarrowdown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = greyarrowdown.png; sourceTree = "<group>"; };
@@ -128,6 +132,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C553B6A17EA759800174624 /* MediaPlayer.framework in Frameworks */,
 				88C2746F17BA783E0025FED0 /* SystemConfiguration.framework in Frameworks */,
 				88C2746D17BA77390025FED0 /* libFlurry.a in Frameworks */,
 				8893C25417B3F6F900CECDC5 /* CoreGraphics.framework in Frameworks */,
@@ -171,6 +176,7 @@
 		8893C25017B3F6F900CECDC5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6C553B6917EA759800174624 /* MediaPlayer.framework */,
 				88C2746E17BA783E0025FED0 /* SystemConfiguration.framework */,
 				88C2746A17BA77390025FED0 /* Flurry */,
 				8893C25117B3F6F900CECDC5 /* Foundation.framework */,
@@ -187,8 +193,6 @@
 				8893C26017B3F6F900CECDC5 /* CHAppDelegate.h */,
 				8893C26117B3F6F900CECDC5 /* CHAppDelegate.m */,
 				8893C26317B3F6F900CECDC5 /* Main.storyboard */,
-				6CEE55C717CEC76E0050A46F /* facebook.png */,
-				6CEE55C817CEC76E0050A46F /* facebook@2x.png */,
 				8893C28B17B3FAED00CECDC5 /* CHFeedItemCell.h */,
 				8893C28C17B3FAED00CECDC5 /* CHFeedItemCell.m */,
 				8893C28817B3F9F100CECDC5 /* CHFeedViewController.h */,
@@ -206,6 +210,9 @@
 		8893C25817B3F6F900CECDC5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				6CEE55C717CEC76E0050A46F /* facebook.png */,
+				6CEE55C817CEC76E0050A46F /* facebook@2x.png */,
+				6C553B6B17EA78D100174624 /* Shugo.m4v */,
 				6CEE55C317CD5D380050A46F /* youtubeicon.png */,
 				6CEE55C417CD5D380050A46F /* youtubeicon@2x.png */,
 				6CEE55BB17CD53290050A46F /* greyarrowdown.png */,
@@ -372,6 +379,7 @@
 				6CEE55C017CD53290050A46F /* greyarrowdown@2x.png in Resources */,
 				6CEE55C217CD53290050A46F /* greyarrowright@2x.png in Resources */,
 				8893C26A17B3F6F900CECDC5 /* Images.xcassets in Resources */,
+				6C553B6C17EA78D100174624 /* Shugo.m4v in Resources */,
 				8893C28717B3F81700CECDC5 /* tv1.png in Resources */,
 				8893C25C17B3F6F900CECDC5 /* InfoPlist.strings in Resources */,
 				8893C26517B3F6F900CECDC5 /* Main.storyboard in Resources */,

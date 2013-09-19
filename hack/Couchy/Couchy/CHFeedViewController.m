@@ -16,6 +16,7 @@
 @end
 
 @implementation CHFeedViewController
+@synthesize moviePlayer;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -211,6 +212,38 @@
     });
 
 
+}
+
+-(void)playMovie
+{
+    NSURL *url = [NSURL fileURLWithPath:[[NSBundle mainBundle]
+                                         pathForResource:@"Shugo" ofType:@"m4v"]];
+    moviePlayer =  [[MPMoviePlayerController alloc]
+                    initWithContentURL:url];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(moviePlayBackDidFinish:)
+                                                 name:MPMoviePlayerPlaybackDidFinishNotification
+                                               object:moviePlayer];
+    
+    moviePlayer.controlStyle = MPMovieControlStyleDefault;
+    moviePlayer.shouldAutoplay = YES;
+    [self.view addSubview:moviePlayer.view];
+    [moviePlayer setFullscreen:YES animated:YES];
+}
+
+- (void) moviePlayBackDidFinish:(NSNotification*)notification {
+    MPMoviePlayerController *player = [notification object];
+    [[NSNotificationCenter defaultCenter]
+     removeObserver:self
+     name:MPMoviePlayerPlaybackDidFinishNotification
+     object:player];
+    
+    if ([player
+         respondsToSelector:@selector(setFullscreen:animated:)])
+    {
+        [player.view removeFromSuperview];
+    }
 }
 
 

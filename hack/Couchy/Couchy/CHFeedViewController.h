@@ -7,10 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MediaPlayer/MediaPlayer.h>
 
 @interface CHFeedViewController : UITableViewController
+{
+    MPMoviePlayerController *moviePlayer;
+}
 
 @property (readwrite, strong, nonatomic) dispatch_queue_t downloadQueue;
 @property (strong, nonatomic) NSMutableArray *feedItems;
+@property (strong, nonatomic) MPMoviePlayerController *moviePlayer;
+-(IBAction) playMovie;
 
 @end

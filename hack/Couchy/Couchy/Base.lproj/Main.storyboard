@@ -301,7 +301,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" ambiguous="YES" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="VIDEO_CELL" rowHeight="180" id="wDa-Fp-1QF" customClass="CHFeedItemCell">
-                                <rect key="frame" x="0.0" y="22" width="320" height="180"/>
+                                <rect key="frame" x="0.0" y="86" width="320" height="180"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="wDa-Fp-1QF" id="grd-v6-wM5">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="180"/>
@@ -339,6 +339,17 @@
                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E1f-cb-91V">
+                                            <rect key="frame" x="137" y="75" width="46" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <state key="normal" title="Play">
+                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="playMovie" destination="LhI-Ba-gKK" eventType="touchUpInside" id="WhY-gV-JAq"/>
+                                            </connections>
+                                        </button>
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
@@ -969,7 +980,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" ambiguous="YES" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="VIDEO_CELL" rowHeight="180" id="q1J-Hc-d40" customClass="CHFeedItemCell">
-                                <rect key="frame" x="0.0" y="22" width="320" height="180"/>
+                                <rect key="frame" x="0.0" y="86" width="320" height="180"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="q1J-Hc-d40" id="H7s-Aq-paI">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="180"/>
@@ -1037,7 +1048,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" ambiguous="YES" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="VIDEO_CELL" rowHeight="180" id="0Iz-ed-rLv" customClass="CHFeedItemCell">
-                                <rect key="frame" x="0.0" y="22" width="320" height="180"/>
+                                <rect key="frame" x="0.0" y="86" width="320" height="180"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="0Iz-ed-rLv" id="GGW-Eo-OEi">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="180"/>
@@ -1194,7 +1205,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" ambiguous="YES" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="VIDEO_CELL" rowHeight="180" id="zF5-NA-rKr" customClass="CHFeedItemCell">
-                                <rect key="frame" x="0.0" y="22" width="320" height="180"/>
+                                <rect key="frame" x="0.0" y="86" width="320" height="180"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="zF5-NA-rKr" id="9hG-s4-gZx">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="180"/>
@@ -1274,7 +1285,7 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="oRh-bL-5Us"/>
         <segue reference="hgh-81-UQt"/>
+        <segue reference="ugz-mD-p5N"/>
     </inferredMetricsTieBreakers>
 </document>
