@@ -108,6 +108,7 @@
     CHFeedItemCell *cell = (CHFeedItemCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
     CHVideoRef *videoRef = self.feedItems[indexPath.row];
+    cell.videoRef = videoRef;
     cell.titleLabelView.text = videoRef.title;
     cell.timerLabelview.text = videoRef.durationString;
     [videoRef loadImageIntoView:cell.stillImageView];

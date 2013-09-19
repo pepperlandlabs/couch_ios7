@@ -7,11 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CHVideoRef.h"
 
 @interface CHFeedItemCell : UITableViewCell
 
 @property (weak, nonatomic) IBOutlet UILabel *timerLabelview;
 @property (weak, nonatomic) IBOutlet UILabel *titleLabelView;
 @property (weak, nonatomic) IBOutlet UIImageView *stillImageView;
+
+@property (strong, nonatomic) CHVideoRef *videoRef;
 
 @end
