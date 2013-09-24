@@ -9,14 +9,18 @@
 #import <UIKit/UIKit.h>
 #import <MediaPlayer/MediaPlayer.h>
 #import "CHFeedItemCell.h"
+#import "CHFeed.h"
 
 @interface CHFeedViewController : UITableViewController <CHFeedItemCellDelegate>
 {
     MPMoviePlayerController *moviePlayer;
 }
 
-@property (readwrite, strong, nonatomic) dispatch_queue_t downloadQueue;
-@property (strong, nonatomic) NSMutableArray *feedItems;
+//@property (readwrite, strong, nonatomic) dispatch_queue_t downloadQueue;
+//@property (strong, nonatomic) NSMutableArray *feedItems;
+
+@property (strong, nonatomic) CHFeed *feed;
+
 @property (strong, nonatomic) MPMoviePlayerController *moviePlayer;
 -(IBAction) playMovie;
 
