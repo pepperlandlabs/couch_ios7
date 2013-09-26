@@ -87,7 +87,7 @@
             </objects>
             <point key="canvasLocation" x="-77" y="125"/>
         </scene>
-        <!--Add Video View Controller-->
+        <!--Add Video View Controller - Add To Queue-->
         <scene sceneID="Vu9-kW-yRA">
             <objects>
                 <tableViewController id="rg3-v1-v6E" customClass="CHAddVideoViewController" sceneMemberID="viewController">
@@ -134,6 +134,16 @@
                                                             <view opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NHP-jS-rgg">
                                                                 <rect key="frame" x="0.0" y="110" width="253" height="30"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tIE-Du-M2L">
+                                                                        <rect key="frame" x="223" y="0.0" width="30" height="30"/>
+                                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                                        <state key="normal" title="+">
+                                                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                                        </state>
+                                                                    </button>
+                                                                </subviews>
                                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                                             </view>
                                                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="101" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rky-5g-fi4">
@@ -168,7 +178,7 @@
                             <outlet property="delegate" destination="rg3-v1-v6E" id="Hqb-0z-Ou5"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="BFG-YS-uqS"/>
+                    <navigationItem key="navigationItem" title="Add To Queue" id="BFG-YS-uqS"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uCn-Fe-iiD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
