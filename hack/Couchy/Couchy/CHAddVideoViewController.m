@@ -38,7 +38,7 @@
     self.feeds = [@[] mutableCopy];
     
     CHFeed *feed = [[CHFeed alloc] initWithURL:[NSURL URLWithString:@"http://pepperlandlabs.com/couch/couch.json"]];
-    feed.title = @"recommended";
+    feed.title = @"Recommended";
     [self.feeds addObject:feed];
     [feed downloadItemsWithsuccess: ^{
         [self updateAll];
@@ -47,7 +47,7 @@
     }];
     
     feed = [[CHFeed alloc] initWithURL:[NSURL URLWithString:@"http://pepperlandlabs.com/couch/couch.json"]];
-    feed.title = @"other";
+    feed.title = @"Popular";
     [self.feeds addObject:feed];
     [feed downloadItemsWithsuccess: ^{
         [self updateAll];
