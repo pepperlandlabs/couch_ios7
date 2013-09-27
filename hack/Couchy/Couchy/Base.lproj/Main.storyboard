@@ -53,14 +53,25 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wrT-i2-EgO">
-                                <rect key="frame" x="20" y="459" width="46" height="30"/>
+                                <rect key="frame" x="20" y="459" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="Add">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <segue destination="rg3-v1-v6E" kind="push" id="UvB-c8-3bd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tRx-OC-85V">
+                                <rect key="frame" x="20" y="518" width="32" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="Intro">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="N7g-dj-pjL" kind="push" id="1Fj-S9-MiX"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -183,6 +194,55 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uCn-Fe-iiD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-75" y="813"/>
+        </scene>
+        <!--Intro View Controller-->
+        <scene sceneID="FkA-nM-dQz">
+            <objects>
+                <viewController id="N7g-dj-pjL" customClass="CHIntroViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nwg-8w-QlJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="kUi-Vb-9IL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aqy-xn-02R">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="PnE-aL-Kbp"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8rU-Jg-OMi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-78" y="1472"/>
+        </scene>
+        <!--Intro Child View Controller-->
+        <scene sceneID="dLJ-Gw-ZX2">
+            <objects>
+                <viewController storyboardIdentifier="ChildView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="szs-4R-twt" customClass="CHIntroChildViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fKo-nZ-tra"/>
+                        <viewControllerLayoutGuide type="bottom" id="Yrm-cs-0jv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="W8K-RN-mjq">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Screen #n" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2D5-R3-Vz3">
+                                <rect key="frame" x="121" y="193" width="78" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="screenNumber" destination="2D5-R3-Vz3" id="tNi-Q5-nyF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fc6-8N-7gy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="278" y="1470"/>
         </scene>
         <!--View Controller - Add To Queue-->
         <scene sceneID="2R6-AB-i36">

@@ -25,6 +25,8 @@
 		6C2E1E3817C8265900C9C780 /* jumpingjackssmall@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C2E1E3617C8265900C9C780 /* jumpingjackssmall@2x.png */; };
 		6C553B6A17EA759800174624 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C553B6917EA759800174624 /* MediaPlayer.framework */; };
 		6C553B6C17EA78D100174624 /* Shugo.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 6C553B6B17EA78D100174624 /* Shugo.m4v */; };
+		6CD366B417F51F05003543C9 /* CHIntroViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CD366B317F51F05003543C9 /* CHIntroViewController.m */; };
+		6CD366B717F51F4A003543C9 /* CHIntroChildViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CD366B617F51F4A003543C9 /* CHIntroChildViewController.m */; };
 		6CDADFA417F111D200518974 /* CHAddVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CDADFA317F111D200518974 /* CHAddVideoViewController.m */; };
 		6CDADFA717F1127600518974 /* CHFeed.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CDADFA617F1127600518974 /* CHFeed.m */; };
 		6CDADFAA17F11A3A00518974 /* CHFeedCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CDADFA917F11A3A00518974 /* CHFeedCollectionView.m */; };
@@ -89,6 +91,10 @@
 		6C2E1E3617C8265900C9C780 /* jumpingjackssmall@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "jumpingjackssmall@2x.png"; sourceTree = "<group>"; };
 		6C553B6917EA759800174624 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		6C553B6B17EA78D100174624 /* Shugo.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Shugo.m4v; sourceTree = "<group>"; };
+		6CD366B217F51F05003543C9 /* CHIntroViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHIntroViewController.h; sourceTree = "<group>"; };
+		6CD366B317F51F05003543C9 /* CHIntroViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHIntroViewController.m; sourceTree = "<group>"; };
+		6CD366B517F51F4A003543C9 /* CHIntroChildViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHIntroChildViewController.h; sourceTree = "<group>"; };
+		6CD366B617F51F4A003543C9 /* CHIntroChildViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHIntroChildViewController.m; sourceTree = "<group>"; };
 		6CDADFA217F111D200518974 /* CHAddVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHAddVideoViewController.h; sourceTree = "<group>"; };
 		6CDADFA317F111D200518974 /* CHAddVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHAddVideoViewController.m; sourceTree = "<group>"; };
 		6CDADFA517F1127600518974 /* CHFeed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHFeed.h; sourceTree = "<group>"; };
@@ -202,6 +208,10 @@
 				8893C26017B3F6F900CECDC5 /* CHAppDelegate.h */,
 				8893C26117B3F6F900CECDC5 /* CHAppDelegate.m */,
 				8893C26317B3F6F900CECDC5 /* Main.storyboard */,
+				6CD366B217F51F05003543C9 /* CHIntroViewController.h */,
+				6CD366B317F51F05003543C9 /* CHIntroViewController.m */,
+				6CD366B517F51F4A003543C9 /* CHIntroChildViewController.h */,
+				6CD366B617F51F4A003543C9 /* CHIntroChildViewController.m */,
 				6CDADFA217F111D200518974 /* CHAddVideoViewController.h */,
 				6CDADFA317F111D200518974 /* CHAddVideoViewController.m */,
 				6CDADFA817F11A3A00518974 /* CHFeedCollectionView.h */,
@@ -421,8 +431,10 @@
 				8893C26217B3F6F900CECDC5 /* CHAppDelegate.m in Sources */,
 				6CDADFA717F1127600518974 /* CHFeed.m in Sources */,
 				88D78E9717B54A0100D9428C /* CHVideoRef.m in Sources */,
+				6CD366B717F51F4A003543C9 /* CHIntroChildViewController.m in Sources */,
 				8893C26817B3F6F900CECDC5 /* CHViewController.m in Sources */,
 				8893C28D17B3FAED00CECDC5 /* CHFeedItemCell.m in Sources */,
+				6CD366B417F51F05003543C9 /* CHIntroViewController.m in Sources */,
 				6CDADFA417F111D200518974 /* CHAddVideoViewController.m in Sources */,
 				6CDADFAA17F11A3A00518974 /* CHFeedCollectionView.m in Sources */,
 				8893C28A17B3F9F100CECDC5 /* CHFeedViewController.m in Sources */,
